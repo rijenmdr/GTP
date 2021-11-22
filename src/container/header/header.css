@@ -1,0 +1,145 @@
+.gpt3__header {
+    display: flex;
+}
+
+.gpt3__header-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 4rem;
+    width: 100%;
+}
+
+.gpt3__header-content h1 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.04rem;
+}
+
+.gpt3__header-content p {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.gpt3__header-content_input {
+    display: flex;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.gpt3__header-content_input input{
+    flex: 2;
+    background: #052D56;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    padding: 0 1rem;
+    color: #fff;
+    line-height: 27px;
+}
+
+.gpt3__header-content_input button{
+    flex: 0.6;
+    background: #FF4820;
+    border: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.gpt3__header-content_people {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gpt3__header-content_people img{
+    width: 181.79px;
+    height: 38px;
+}
+
+.gpt3__header-content_people p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #fff;
+    margin: 0 0 0 1rem;
+}
+
+.gpt3_header-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3_header-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1115px) {
+    .gpt3__header {
+        flex-direction: column;
+    }
+    .gpt3__header-content{
+        margin:0 0 3rem !important;
+    }
+}
+
+/* @media screen and (max-width:770px) {
+    .gpt3__header-content h1 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+    .gpt3__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+} */
+
+@media (max-width:695px) {
+    .gpt3__header {
+        padding: 2rem;
+    }
+    .gpt3__header-content h1 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+    .gpt3__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .gpt3__header-content_people {
+        flex-direction: column;
+    }
+    .gpt3__header-content_people p{
+        margin: 0;
+    }
+    .gpt3__header-content_input input,
+    .gpt3__header-content_input button {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width:470px) {
+    .gpt3__header-content h1 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
